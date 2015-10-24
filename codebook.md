@@ -61,17 +61,10 @@ See 'features_info.txt' of the original dataset for more details.
 
 ##Creating the tidy datafile
 The tidy data file presented in this project was created from the original dataset as follows:
-1) The training and the test set feaure, activity, and subject data files (X_train, X_test, y_train, y_test, subject_train and subject_test data files) were merged to create one data set. 
+1) The training and the test set feature, activity, and subject data files (X_train, X_test, y_train, y_test, subject_train and subject_test data files) were merged to create one data set. 
 2) The feature data from the X_train and X_test files were filtered to retain only feature data representing either a mean or standard deviation feature observation.
 3) The activity data from the y_train and y_test data represented as integers from 1 to 6 were replaced by text strings representing the activities according to the
- associations presented in the activitiy_labels file in the original dataset as follows:
-
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
+ associations presented in the activity_labels file in the original dataset.
  
 4) The data set was labled with descriptive variable names as follows:
 The subject data were labled as "Subject", the activities as "Activity", and the retained feature variables were named in accordance with the corresponding name from the features file in the original data set.
@@ -108,20 +101,6 @@ The observations are the average of each of the feature variables selected for i
  - Variables present in the dataset
 
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
-
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ### Variable 1: 'Subject'
 integer values 1 to 30 identifying each of the subjects in the dataset.
