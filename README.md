@@ -4,15 +4,17 @@ Repository for JHU Data Science Getting and Cleaning Data Course
 run_analysis.R is an R script which produces a file named tidy_data_set.txt.
 The run_analysis.R script must be run with the working directory set to the UCI HAR Dataset.
 
-run_analysis.R performs the following actions:
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement. 
-Applies descriptive activity names (WALK, LAYING, etc.) to the activities in the data set
-Labels the dataset columns with feature names from the original features file. 
-Creates a second, independent tidy data set with the average of the observations for each feature grouped by activity and subject.
+The run_analysis.R script performs the following actions:
+
+1) Merges the training and the test sets to create one data set.
+2) Extracts only the measurements on the mean and standard deviation for each measurement. 
+3) Applies descriptive activity names (WALK, LAYING, etc.) to the activities in the data set.
+4) Labels the dataset columns with feature names from the original features file. 
+5) Creates a second, independent tidy data set with the average of the observations for each feature grouped by activity and subject.
 
 A detailed breakdown of the script is as follows:
-## Load the plyr and dplyr libraries
+
+## Load the plyr and dplyr libraries.
 library(plyr)
 library(dplyr)
 
